@@ -1,5 +1,6 @@
 import key
 from keras.models import load_model
+#get white place
 def analyze(gameboard_list,black_position,white_position):
     model = load_model("omok_white.h5")
     r = list(model.predict([gameboard_list])[0])
